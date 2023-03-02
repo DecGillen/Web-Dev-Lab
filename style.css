@@ -1,1 +1,9 @@
-{\rtf1}
+body{
+	display:grid;
+}
+
+.Malta{
+	height:250px;
+	width:80%;
+	margin:auto;
+}
