@@ -1,21 +1,18 @@
-body{
-	display:grid;
-	background-image; 
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
 }
-
-.Malta{
-	height:250px;
-	width:80%;
-	margin:auto;
+.carousel-item:hover {
+  background-color: #f8f9fa;
 }
-.navbar{
-	background-image: url("img/Malta.jpg");
-	background-color: black;
+.testimonial {
+  text-align: center;
 }
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 91%;
+.testimonial p {
+  font-style: italic;
+}
+.container {
+  margin-top: 300px;
 }
