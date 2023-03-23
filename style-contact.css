@@ -21,13 +21,29 @@ input[type=submit] {
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #1154EF;
+}
+#thankyou h1{
+	color:white;
+}
+#thankyou img{
+	display:grid;
+	max-width:100%;
+	margin-left:auto;
+	margin-right:auto;
 }
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+	border-radius: 5px;
+	background-color: #1d1e21;
+	margin-top:20px;
+	padding: 20px;
+	color:white;
+}
+.setList{
+	margin-top:20px;
+	display:none;
+	margin-left: 50px;
 }
 body{
 	display:grid;
@@ -35,12 +51,19 @@ body{
 }
 .navbar-custom {
 	background-color: #1d1e21;
+	font-size: 20px;
 }
 /* Modify brand and text color */
+/*below is styling for the nav menu styling*/
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text, .navbar-custom .nav-item-active .nav-link{
 	color: #1154EF;
+	font-weight: bold;
 }
 .navbar-custom .nav-item .nav-link{
 	color: white;
+}
+[aria-current]:not([aria-current="false"]) {
+	font-weight: bold;
+	color: blue;
 }

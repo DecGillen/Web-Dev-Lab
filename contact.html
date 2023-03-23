@@ -5,52 +5,70 @@
 		<link rel="stylesheet" href="style-contact.css"/>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-custom">
-		  <a class="navbar-brand" href="#">Beirt Eile</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-			  <li class="nav-item">
-				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="gallery.html">Gallery</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Testimonials</a>
-			  </li>
-			  <li class="nav-item-active">
-				<a class="nav-link" href="contact.html">Contact Us</a>
-			  </li>
-			</ul>
-		  </div>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Beirt Eile</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="gallery.html">Gallery</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Testimonials</a>
+					  </li>
+					  <li class="nav-item-active">
+						<a class="nav-link" href="contact.html">Contact Us</a>
+					  </li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 		<div class="container">
-			<form action="action_page.php">
+			<form id="form" method="post" action="javascript:myAlert()">
 				<label for="name">Your Name</label>
 				<input type="text" id="name" name="name" placeholder="Your name...">
 				<label for="email">Email Address</label>
 				<input type="text" id="email" name="email" placeholder="Your email address...">
 				<!--Adding a query type list to have some form of message validation function added, like if we hypothetically could have an auto reply system to ask for more information based on their selected option-->
-				<label for="country">Query type</label>
-				<select id="country" name="country">
+				<label for="query">Query type</label>
+				<select id="query" name="select" onchange="setList()">
+					<option value="" selected disabled hidden>Choose here...</option>
 					<option value="festival">Festival</option>
 					<option value="wedding">Wedding</option>
-					<option value="other">Other</option>
+					<option value="general">Other</option>
 				</select>
 
 				<label for="subject">Message</label>
 				<textarea id="subject" name="subject" placeholder="Type your question here..." style="height:200px"></textarea>
 
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onsubmit="formSubmit.html">
 
 			</form>
 		</div>
-		
-		<script src="script.js"></script>
+		<div id="setListW" class="container setList">
+			<h2>Setlist for Weddings</h2>
+			<ul>Option</ul>
+			<ul>Option</ul>
+			<ul>Option</ul>
+			<ul>Option</ul>
+			<ul>Option</ul>
+		</div>
+		<div id="setListF" class="container setList" >
+			<h2>Setlist for Festivals</h2>
+			<ul>Option</ul>
+			<ul>Option</ul>
+			<ul>Option</ul>
+			<ul>Option</ul>
+			<ul>Option</ul>
+		</div>
 	</body>
 </html>
