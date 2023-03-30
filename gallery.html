@@ -7,7 +7,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg">
 		  <a class="navbar-brand" href="#">Navbar</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -27,11 +27,11 @@
 		  </div>
 		</nav>
 			<!--Gallery images stored in a container. There's an opacity transform in the CSS for them, maybe a size transform too later once I can get the Javascript to not break-->
-		<div class="gallery-container">
-			<img class="gallery-item" src="img\Bodhran.jpg"></img>
-			<img class="gallery-item" src="img\SideBySide.jpg"></img>
-			<img class="gallery-item" src="img\Jump.jpg"></img>
-			<img class="gallery-item" src="img\Shoes.jpg"open()"></img>
+		<div class="gallery-container" class="row">
+				<img class="gallery-item col-md-6 col-lg-3" src="img\Bodhran.jpg"></img>
+				<img class="gallery-item col-md-6 col-lg-2" src="img\SideBySide.jpg"></img>
+				<img class="gallery-item col-md-6 col-lg-3" src="img\Jump.jpg"></img>
+				<img class="gallery-item col-md-6 col-lg-3" src="img\Shoes.jpg"img>
 		</div>
 		<div class="video-container">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/p51ScVV7_5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

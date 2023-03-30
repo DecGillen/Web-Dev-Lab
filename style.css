@@ -2,6 +2,7 @@
 body{
 	display:grid;
 	background-image: url("img/Shoes.jpg");
+	background-size: cover;
 }
 nav {
 	color: black;
@@ -15,8 +16,16 @@ p {
 	width:80%;
 	margin:auto;
 }
-.navbar{
-	background-color: black;
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
 }
 
 #myVideo {
