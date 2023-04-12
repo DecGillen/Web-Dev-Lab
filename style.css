@@ -1,38 +1,93 @@
-
+/*Background image*/
 body{
 	display:grid;
 	background-image: url("img/Shoes.jpg");
+	background-size: cover;
 }
+/*Nav Bar*/
 nav {
 	color: black;
 }
+.navbar:hover {
+	background-color: black;
+}
+.navbar-brand{
+	color:white !important;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
 p {
 	color: white;
 }
 
-.Malta{
-	height:250px;
-	width:80%;
-	margin:auto;
-}
-.navbar{
-	background-color: black;
+/*Buttons*/
+     .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: blue;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+	  
+	 .hidden {
+  display: none;
 }
 
+/*Homepage CSS*/
 #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 100%;
+  width: 50%;
   height: 91%;
+  justify-content: center;
 }
+.book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  background-color: white;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.book: hover {
+  opacity: 1;
+}
+
+/*Gallery CSS*/
 
 .gallery-container{
 	display: flex;
-	height:200px;
+	height:50%;
 	width:80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	max-height:50%!important;
+	max-width:80%!important;
+	margin-left: 10% !important; 
+	margin-right: 10% !important;
+	margin-bottom: 5%;
+	justify-content: center;
 }
 
 .gallery-item {
@@ -42,24 +97,47 @@ p {
 	padding: 3px;
 	transition: 0.3s;
 }
+
 .gallery-item:hover {
 	opacity: 1;
 	size:80%;
 }
-.video-container{
-	display: grid;
-	grid-template-columns: auto auto;
-	width:80%;
-	margin-left: 10%;
-	margin-right: 10%;
+.video-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the video items */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.video-item{
-	flex:left;
-	size: 50%;
+.video-item {
+  flex: 0 0 45%;
+  margin-bottom: 20px;
 }
 
-.video-text{
-	flex:right;
-	size:50%;
+.video-item iframe {
+  display: block;
+  width: 100%;
+}
+
+.video-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*footer*/
+
+footer{
+	flex:0;
+	bottom: 0;
+}
+
+footer:hover {
+	background-color: black;
+}
+
+ul {
+	text-align: center;
+	color: white;
+	list-style: none;
 }
