@@ -1,0 +1,139 @@
+ /*NAVBAR-BEGIN*/
+ .navbar-custom {
+	font-size: 20px;
+}
+.navbar-custom:hover{
+	background-color:black;
+}
+.navbar-custom .navbar-brand{
+	color:white;
+	font-weight:bold;
+}
+.navbar-custom .nav-item-active .nav-link{
+	color: #1154EF;
+	font-weight: bold;
+}
+.navbar-custom .nav-item .nav-link{
+	color: white;
+}
+/*Next 2, customising the navbar toggle button that appears for smaller screens in responsive design so that it's not grey and can be see on our hover background*/
+.custom-toggler.navbar-toggler {
+	border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+	background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*NAVBAR-END*/
+/*FORM-BEGIN*/
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical; /*Lock text field resizing to only vertical axis*/
+	background-color:#e0dede;/*Slight off grey background for text fields*/
+	color:black;
+}
+input[type=submit] {
+	background-color: #1154EF;/*custom blue color HEX from dress in imagery*/
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: #04AA6D;/*Highlight for showing button is ready to be clicked*/
+}
+.container {
+	border-radius: 5px;
+	background-color: black;
+	margin-top:20px;
+	padding: 20px;
+	color:white;
+}
+ /*FORM-END*/
+/*SETLIST-BEGIN*/
+.setList{
+	margin:20px;
+	display:none;
+}
+.setList ul{
+	list-style-type: circle;
+	list-style-position:inside;
+	font-size:25px;
+
+}
+.setList h3{
+	font-size:50px;
+	padding-left:20px;
+}
+.setList p{
+	font-size:25px;
+	padding-left:40px;
+
+}
+/*SETLIST-END*/
+/*FOOTER-BEGIN*/
+footer{
+	margin-top:20px;
+	color:white;
+	font-size:18px;
+	padding:25px;
+}
+footer:hover{
+	background:black;
+}
+.footer{
+	display:flex;
+	flex-direction:row;
+	align-items:stretch;
+}
+@media (max-width:1024px){
+	.footer{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-around;
+	}
+}
+#left{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+}
+#center{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+#right{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:center;
+}
+/*FOOTER-END*/
+body{
+	height:100%;
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+	background-image: url("img/Shoes.jpg");
+	background-size:cover;
+}
+a:link{
+	color:#1154EF;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover{
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
