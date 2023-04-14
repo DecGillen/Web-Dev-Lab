@@ -32,9 +32,6 @@
 	
 }
 
-.container {
-	margin-top: 300px;
-}
 
 body{
 	display:grid;
@@ -58,6 +55,10 @@ p {
 
 .navbar .navbar-nav .nav-link {
   color: #fff;
+}
+
+a.link {
+	color: white;
 }
 
 footer {
