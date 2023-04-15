@@ -1,0 +1,99 @@
+.carousel-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;
+	width: 50%;
+	margin-top: 110px;
+	text-align: center;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.carousel-item:hover {
+	background-color:  rgba(0, 0, 0, 0.5);
+}
+.testimonial {
+	color: white;
+	padding-left: 100px;
+	padding-right: 100px
+}
+.testimonial h3 {
+	font-size: 40px;
+	padding-left: 100px;
+	padding-right: 100px
+}
+
+.testimonial p {
+	font-size: 25px;
+	font-style: italic;
+	padding-left: 100px;
+	padding-right: 100px
+	
+}
+
+
+body{
+	display:grid;
+	background-image: url("img/Shoes.jpg");
+	background-size: cover;
+}
+nav {
+	color: black;
+}
+p {
+	color: white;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+a.link {
+	color: white;
+}
+
+footer {
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+.contact p {
+	font-size: 14px;
+	margin: 0 10px;
+}
+
+
+.contact p:not(:last-child)::after {
+  content: "|";
+  margin: 0 10px;
+  color: #aaa;
+}
